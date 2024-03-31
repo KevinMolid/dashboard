@@ -6,8 +6,10 @@ const weather = document.getElementById('weather')
 
 function updateTime(){
     const date = new Date()
-    const current_sec = date.getSeconds() < 10 ? "0"+date.getSeconds() : date.getSeconds()
-    const current_time = date.getHours()+":"+date.getMinutes()+":"+ current_sec;
+    const hours = date.getHours() < 10 ? "0"+date.getHours() : date.getHours()
+    const minutes = date.getMinutes() < 10 ? "0"+date.getMinutes() : date.getMinutes()
+    const seconds = date.getSeconds() < 10 ? "0"+date.getSeconds() : date.getSeconds()
+    const current_time = hours+":"+minutes+":"+ seconds;
     time.innerText = current_time
 }
 

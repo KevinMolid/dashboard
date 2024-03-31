@@ -15,9 +15,6 @@ html, body {
 body {
     height: 100svh;
     background: no-repeat center center fixed #222; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     display: flex;
     flex-direction: column;
